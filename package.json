@@ -1,0 +1,23 @@
+{
+  "name": "babel-node-rx-ping-monitor",
+  "version": "1.0.0",
+  "description": "A simple RxJS ping monitor written in ECMA Script.",
+  "main": "monitor.js",
+  "scripts": {
+    "start": "node monitor.js",
+    "dev": "babel-node --presets 'es2015,stage-0' ./src/index.js",
+    "build": "babel --presets 'es2015,stage-0' -o monitor.js ./src/index.js"
+  },
+  "author": "mike.bild@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "rx": "4.1.0",
+    "rx-node": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.10.1",
+    "babel-core": "6.10.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-stage-0": "6.16.0"    
+  }
+}
